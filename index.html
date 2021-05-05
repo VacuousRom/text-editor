@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Text Editor</title>
+</head>
+
+<body>
+
+    <!-- text editor component -->
+    <div class="text-editor">
+        
+        <div class="text-editor-wrapper">
+            <h1>Text Editor</h1>
+            <div class="text-editor-navbar">
+
+                <div class="navbar-font-styling navbar-styling">
+
+                    <button class="navbar-item " data-element="bold">
+                        <i class="fas fa-bold"></i>
+                    </button>
+
+                    <button class="navbar-item " data-element="underline">
+                        <i class="fas fa-underline"></i>
+                    </button>
+
+                    <button class="navbar-item " data-element="italic">
+                        <i class="fas fa-italic"></i>
+                    </button>
+
+                </div>
+
+                <div class="navbar-justify-styling navbar-styling">
+                    <button class="navbar-item " data-element="justifyLeft">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+
+                    <button class="navbar-item " data-element="justifyRight">
+                        <i class="fas fa-align-right"></i>
+                    </button>
+
+                    <button class="navbar-item " data-element="justifyCenter">
+                        <i class="fas fa-align-center"></i>
+                    </button>
+
+                    <button class="navbar-item " data-element="justifyFull">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+
+                <div class="navbar-justify-lists navbar-styling">
+                    <button class="navbar-item " data-element="insertUnorderedList">
+                        <i class="fas fa-list-ul"></i>
+                    </button>
+
+                    <button class="navbar-item " data-element="insertOrderedList">
+                        <i class="fas fa-list-ol"></i>
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div class="editor-body">
+                <div class="text" contenteditable="true">
+
+                </div>
+            </div>
+            
+            <div class="save-and-load-section">
+                    <p>Select a file to load</p>
+                    <form id="jsonFile" name="jsonFile" enctype="multipart/form-data" method="post">
+                        <input type="file" name="" id="file-selector" accept=".JSON" >
+                        
+                    </form>
+                    <p>Press load to load the selected file or save current file</p>
+                    <div class="buttons-wrap">
+                            <input type='button' id='btnLoad' value='Load' class="btn">
+                            <button class="btn save-JSON">Save to file</button>
+                    </div>
+                    
+            </div>
+            
+
+            <!-- footer info -->
+            <div class="footer">
+                Made for Ardent Code by Grzegorz Piórkowski.
+            </div>
+
+        </div>
+    </div>
+    <!-- end of the text editor component -->
+
+    <script src="main.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a6c3cf00fe.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
