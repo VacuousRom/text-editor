@@ -71,7 +71,15 @@
     border: none;
     color: #F7F4EB;
     font-size: 1rem;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
 }
+
+.navbar-item:hover {
+    color: #F9701A;
+}
+
+
 
 .navbar-styling {
     display: flex;
@@ -124,7 +132,7 @@
 
 @media(min-width: 1000px) {
     .text-editor-wrapper {
-        width: 70%;
+        width: 60%;
         justify-self: center;
     }
 }

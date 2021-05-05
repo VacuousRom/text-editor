@@ -1,4 +1,4 @@
-const functionButtons = document.querySelectorAll('.btn');
+const functionButtons = document.querySelectorAll('.navbar-item');
 const fileSelector = document.getElementById('file-selector');
 const saveBtn = document.querySelector('.save-JSON');
 const loadBtn = document.querySelector('#btnLoad')
