@@ -167,8 +167,9 @@ h1 {
 
 @media(min-width: 1000px) {
     .text-editor-wrapper {
-        width: 60%;
+        width: 50%;
         justify-self: center;
+        grid-gap: 1;
     }
     .text-editor-navbar {
         grid-gap: 2.1rem;
@@ -177,6 +178,16 @@ h1 {
     .navbar-styling {
         grid-gap: 1.2rem;
     }
+    
+}
+@media (min-width: 1920px) {
+    .text-editor-wrapper {
+        grid-gap: 0;
+    }
+    .save-and-load-section {
+        grid-gap: 1rem;
+        margin: 1rem 0;
+    }
 }
 
 @media(max-width: 400px) {
@@ -184,3 +195,9 @@ h1 {
         min-height: 200px;
     }
 }
+
+@media (orientation: landscape) {
+    .editor-body {
+        min-height: 200px;
+    }
+  }
