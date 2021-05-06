@@ -78,7 +78,7 @@
                         <input type="file" name="" id="file-selector" accept=".JSON" >
                         
                     </form>
-                    <p>Press load to load the selected file or save the current file</p>
+                    <p>Press the "Load" button to load the selected file, or "Save to file" to save the current text on your device.</p>
                     <div class="buttons-wrap">
                             <input type='button' id='btnLoad' value='Load' class="btn">
                             <button class="btn save-JSON">Save to file</button>
@@ -89,10 +89,21 @@
 
             <!-- footer info -->
             <div class="footer">
-                Made for Ardent Code by Grzegorz Piórkowski.
+                Made for ArdentCode by Grzegorz Piórkowski.
             </div>
+            
+
 
         </div>
+            <!-- confirmation modal -->
+            <div class="confirmation-modal">
+                <h1>Warning</h1>
+                <p>Are you sure you want to load a new file? Any unsaved progress will be lost. </p>
+                <div class="buttons-wrap">
+                    <button class="btn load-confirm">Load</button>
+                    <button class="btn cancel-btn">Cancel</button>
+                </div>
+            </div>
     </div>
     <!-- end of the text editor component -->
 

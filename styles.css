@@ -1,7 +1,6 @@
-/* bg color #1D1D24 */
-/* primary light color #27272F */
-/* font color #F7F4EB */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -27,6 +26,13 @@
     border-radius: 5px;
 }
 
+h1 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    align-self: center;
+    justify-self: center;
+}
+
 .text-editor {
     font-family: 'Roboto', sans-serif;
     display: grid;
@@ -35,6 +41,8 @@
     padding: 1.5rem;
     height: calc(var(--vh, 1vh) * 100);
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .text-editor-wrapper {
@@ -130,10 +138,44 @@
     font-size: .7rem;
 }
 
+/* confirmation modal */
+
+.confirmation-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -50%);
+    height: 40%;
+    width: 80%;
+    background: #1D1D24;
+    border-radius: 10px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-gap: 2rem;
+    transition: .3s all ease-in-out;
+    padding: 0 2rem;
+    
+}
+
+.modal-in {
+    
+    transform: translate(-50%, -50%);    
+    transition: .3s all ease-in-out;
+    
+}
+
 @media(min-width: 1000px) {
     .text-editor-wrapper {
         width: 60%;
         justify-self: center;
+    }
+    .text-editor-navbar {
+        grid-gap: 2.1rem;
+        align-self: center;
+    }
+    .navbar-styling {
+        grid-gap: 1.2rem;
     }
 }
 
