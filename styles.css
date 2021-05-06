@@ -123,12 +123,11 @@ h1 {
 }
 
 
-#file-selector::-webkit-file-upload-button {
+#file-selector::-webkit-file-upload-button, #file-selector::-moz-file-upload-button, #file-selector::-o-file-upload-button, #file-selector::-ms-file-upload-button {
     cursor: pointer;
     background: #27272F;
     border: none;
     color: #F7F4EB;
-    
     border-radius: 10px;
     padding: 1rem;
   }
