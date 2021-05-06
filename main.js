@@ -4,6 +4,15 @@ const saveBtn = document.querySelector('.save-JSON');
 const loadBtn = document.querySelector('#btnLoad')
 let textArea = document.querySelector('.text');
 
+// resize for mobile address bar
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
+
+// editing commands
 functionButtons.forEach(button => {
     button.addEventListener('click', () => {
 

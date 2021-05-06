@@ -33,7 +33,7 @@
     color: #F7F4EB;
     background: #1D1D24;
     padding: 1.5rem;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
 }
 
@@ -134,5 +134,11 @@
     .text-editor-wrapper {
         width: 60%;
         justify-self: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .editor-body {
+        min-height: 200px;
     }
 }
